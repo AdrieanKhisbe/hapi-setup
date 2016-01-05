@@ -1,8 +1,9 @@
 # hapi-setup
 
-[![Current Version](https://img.shields.io/npm/v/hapi-setup.svg)](https://www.npmjs.org/package/hapi-setup)
-[![Build Status via Travis CI](https://travis-ci.org/continuationlabs/hapi-setup.svg?branch=master)](https://travis-ci.org/continuationlabs/hapi-setup)
-![Dependencies](http://img.shields.io/david/continuationlabs/hapi-setup.svg)
+[![npm version][npm-badge]][npm-url]
+[![Build Status][travis-badge]][travis-url]
+[![Coverage Status][coveralls-badge]][coveralls-url]
+[![Dependency Status][david-badge]][david-url]
 
 hapi plugin that exposes a `setup` method for retrieving the server configuration. Provides information such as the version of Node running, the hapi server connections, routing tables per connection, and plugin information.
 
@@ -52,3 +53,12 @@ Returns the following object:
     - `multiple` - Boolean. `true` if the plugin can be registered multiple times. `false` otherwise.
     - `options` - Object. Contains the options passed to the plugin's `register()` function.
     - `attributes` - Object. Contains the attributes used when registering the plugin. This can include the entire contents of the plugin's `package.json`.
+
+[npm-badge]: https://img.shields.io/npm/v/hapi-setup.svg
+[npm-url]: https://npmjs.com/package/hapi-setup
+[travis-badge]: https://api.travis-ci.org/continuationlabs/hapi-setup.svg
+[travis-url]: https://travis-ci.org/continuationlabs/hapi-setup
+[coveralls-badge]:https://coveralls.io/repos/continuationlabs/hapi-setup/badge.svg?branch=master&service=github
+[coveralls-url]: https://coveralls.io/github/continuationlabs/hapi-setup?branch=master
+[david-badge]: https://david-dm.org/continuationlabs/hapi-setup.svg
+[david-url]: https://david-dm.org/continuationlabs/hapi-setup
