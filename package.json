@@ -31,6 +31,7 @@
   "devDependencies": {
     "belly-button": "1.x.x",
     "code": "1.x.x",
+    "coveralls": "^2.11.6",
     "hapi": "9.x.x",
     "inert": "3.x.x",
     "joi": "6.x.x",
@@ -45,6 +46,7 @@
     "prepublish": "webpack",
     "start": "node dev-server & npm run webpack",
     "test": "npm run lint && lab -v -t 100 -a code",
+    "coverage": "lab -a code -s -r lcov | coveralls",
     "webpack": "webpack -w -c -v"
   },
   "keywords": [
